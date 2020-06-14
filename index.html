@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      body{
+        background-color:#bad2e3;
+      }
+      .p{
+        cursor:pointer;
+        text-decoration:none;
+      }
+    </style>
+  </head>
+  <body>
+    <br>
+    <img src="s.png" class="v s center responsive"/>
+    <br>
+    <br>
+    <div class="wrapper">
+      <button class="oi wp responsive"><a href="vrrr.html" class="no">~  Virtual Reality ~</a></button>
+      <p class="wire responsive ">--------------</p>
+      <button class="oi wp  responsive"><a href="kay.html" class="no">~ The Future ~</a></button>
+      <p class="wire responsive ">----------</p>
+      <button class="oi wp  responsive"><a href="bp.html" class="no">~ Arising Benefits & Problems  ~</a></button>
+  </div>
+  <br>
+<br>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="go.jpg" style="width:100%">
+  <div class="text responsive">~ Possibilities Are Endless ~</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="my.jpg" style="width:100%">
+  <div class="text responsive">~ Imagination Runs Wild ~</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="vr.jpg" style="width:100%">
+  <div class="text responsive"> ~ The Future Is In Your Hands ~ </div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

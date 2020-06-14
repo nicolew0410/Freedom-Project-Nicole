@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="re.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+  body{
+    background-color:#d0c3e0;
+  }
+  a href{
+    text-decoration:none;
+  }
+  button{
+    text-decoration:none;
+  }
+  @media screen and (max-width: 500px) {
+    .accordion.responsive{
+    position:relative;
+    left:33%;
+    width:223px;
+    font-size: 19px;
+    transition: 0.4s;
+    }
+    .panel.responsive{
+    position:relative;
+    left:33%;
+    width:223px;
+    font-size:9px;
+    padding:1px;
+    text-align:center;
+    border-width:7px;
+    border-color:#d0c3e0;
+    border-style:inset;
+    font-family:ham;
+    }
+    .hmm.responsive{
+      width:140px;
+      height:420px;
+      position:absolute;
+      left:6px;
+      overflow:hidden;
+      border-radius:20px;
+    }
+    .ki.responsive{
+      width:185px;
+      height:134px;
+      border-color:#827196;
+      border-width:8px;
+      border-style:double;
+    }
+    .vi.responsive{
+      border-width:6px;
+    }
+    .ven.responsive{
+      line-height:0;
+      letter-spacing:0;
+    }
+  }
+</style>
+</head>
+<body>
+<br>
+<img src="hit.png" class="cr center responsive"/>
+<br>
+<br>
+<div class="wrapper">
+      <button class="sec woo responsive"><a href="index.html" class="no">~ Home ~</a></button>
+      <p class="wire responsive ">--------------</p>
+      <button class="sec woo responsive"><a href="vrrr.html" class="no">~ Virtual Reality ~ </a></button>
+      <p class="wire responsive ">----------</p>
+      <button class="sec woo responsive"><a href="bp.html" class="no">~ Arising Benefits & Problems ~</a></button>
+</div>
+<br>
+<div class="vi responsive">
+<div class="container-sm">
+  <iframe src="mini.html" class="hmm responsive"></iframe>
+<br>
+<br>
+<br>
+</div>
+<div>
+  <button class="accordion responsive ">Medical Innovations</button>
+  <div class="panel responsive">
+    <p class="ven"> During COVID-19, doctors and nurses scrambled during the severe shortages internationally. Using VR, they have found ways to treat the virus. Universities have been accelerating graduates in the medical field to provide more doctors. They needed training, and VR came along to help. Simulations are run by authorities to train the incoming wave of students. Not only is this helpful in communication, but it also allows a refresh of experience to older doctors and nurses. 
+    </p>
+    <img src="si.jpg" class="ki responsive"/>
+    <br>
+    <br>
+    <p>Source: https://www.cnn.com/2020/04/21/tech/vr-training-coronavirus/index.html
+    </p>
+  </div>
+  <br>
+  <br>
+  <button class="accordion responsive">Gaming Technology</button>
+  <div class="panel responsive">
+    <p class="ven"> Black Box VR sparked a new interest in the technology community at CES 2018. Combining the concept of games with exercises, Black Box managed to release a virtual reality gym. Fitness now becomes something that not only improves one's wellbeing but also an addictive, fun, and thrilling experience.
+    </p>
+    <br>
+    <div class="tr">
+        <<iframe width="560" height="315" src="https://www.youtube.com/embed/bDf15sO5F2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p> Source : https://www.ces.tech/Exhibitors/Success-Stories/Black-Box-VR.aspx </p>
+  </div>
+  <br>
+  <br>
+  <button class="accordion responsive">Architectural Purposes</button>
+  <div class="panel responsive">
+    <p class="ven">
+    Architecture, the practice of designing or constructing buildings, has been changing due to technology. Things have become more efficient thanks to a new innovation with Virtual Reality. Details are finer, scaling is easier, and projects involve better collaboration. Not only does this help people in the field, but also allows real estaters to sell building easier just by a click of a button virtually. 
+    </p>
+    <img src="https://www.ffkr.com/wp-content/uploads/2019/01/3D-Studio-Jeremy-VR.jpg" class="ki responsive"/>
+    <br>
+    <br>
+    <p>
+    Source: https://vrcollab.com/blog/how-virtual-reality-vr-improves-architecture/</p>
+  </div>
+  <br>
+  <br>
+</div>
+</div>
+
+<script src="script.js"></script>
+ <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</div>
+</body>
+</html>
+<!--https://www.youtube.com/watch?time_continue=6&v=YJg02ivYzSs -->
